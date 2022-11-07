@@ -1,0 +1,102 @@
+* {
+  margin:0;
+  padding:0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('../fonts/MontserratAlternates-Regular.ttf') format('ttf'), url('../fonts/MontserratAlternates-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('../fonts/MontserratAlternates-Medium.ttf') format('ttf'), url('../fonts/MontserratAlternates-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+
+body	{
+  padding: 10px;
+  min-height: 100vh;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: calc(100vh - 20px);
+  border: 2px solid #000000;
+  background-color: #f4f9a9;
+
+}
+.information-blok, .management-blok {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px 0;
+  width: 230px;
+}
+.title-image {
+  width: 130px;
+}
+img {
+  width: 100%;
+}
+.text-blok {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+}
+h1, h2	{
+  font-size: 13px;
+}
+h1 {
+  color: #960014;
+}
+.scale-buttons button {
+  width: 50px;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+}
+.step-buttons button {
+  width: 90px;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+}
+.button-like button {
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+}
+#like-calc {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+}
+a {
+
+}
