@@ -42,8 +42,11 @@ body	{
   padding: 10px;
   min-height: 100vh;
   position: relative;
+  font-size: 14px;
+  line-height: 120%;
 }
 .wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -52,12 +55,19 @@ body	{
   background-color: #f4f9a9;
 
 }
+.home-icon {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 30px;
+}
 .information-blok, .management-blok {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 20px 0;
-  width: 230px;
+  width: 240px;
 }
 .title-image {
   width: 130px;
@@ -66,37 +76,71 @@ img {
   width: 100%;
 }
 .text-blok {
+  padding-left: 5px;
   margin-bottom: 15px;
   width: 100%;
   height: 30px;
   background-color: #ffffff;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
 }
 h1, h2	{
-  font-size: 13px;
+  font-size: 14px;
 }
 h1 {
   color: #960014;
+  margin: 5px 0 25px;
+}
+h2 {
+padding-left: 5px;
+margin-bottom: 15px;
+width: 100%;
+}
+
+.mine-image {
+  height: calc(100vh - 22px);
+}
+.mine-image img {
+  width: auto;
+  height: calc(100vh - 22px);
+}
+
+.page, .chapter {
+  display: flex;
+  align-items: center;
+  width: 110px;
+}
+.management-blok span {
+  font-weight: bold;
 }
 .scale-buttons button {
   width: 50px;
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
 }
 .step-buttons button {
   width: 90px;
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
 }
-.button-like button {
-  width: 30px;
-  height: 30px;
-  background-color: inherit;
+.like-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0;
+  width: 90px;
 }
-#like-calc {
+.like-image {
   display: inline-block;
+  width: 30px;
+}
+/* #like-calc {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
   box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
-}
+} */
 a {
 
 }
