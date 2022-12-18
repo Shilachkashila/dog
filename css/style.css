@@ -1,21 +1,9 @@
+/* --- 0000000000000000 ---- */
 * {
   margin:0;
   padding:0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat Alternates', sans-serif;
-}
-@font-face {
-    font-family: 'Montserrat Alternates';
-    src: url('../fonts/MontserratAlternates-Regular.ttf') format('ttf'), url('../fonts/MontserratAlternates-Regular.woff2') format('woff2');
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'Montserrat Alternates';
-    src: url('../fonts/MontserratAlternates-Medium.ttf') format('ttf'), url('../fonts/MontserratAlternates-Medium.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 500;
 }
 
 *,*:before,*:after{
@@ -36,7 +24,22 @@ a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
+/* --- 0000000000000000 end---- */
 
+/* --- fonts ---- */
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('../fonts/MontserratAlternates-Regular.ttf') format('ttf'), url('../fonts/MontserratAlternates-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('../fonts/MontserratAlternates-Medium.ttf') format('ttf'), url('../fonts/MontserratAlternates-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+/* --- fonts end---- */
 
 body	{
   padding: 10px;
@@ -44,6 +47,7 @@ body	{
   position: relative;
   font-size: 14px;
   line-height: 120%;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 .wrapper {
   position: relative;
@@ -69,19 +73,24 @@ body	{
   padding: 0 20px 0;
   width: 240px;
 }
-.title-image {
-  width: 130px;
-}
-img {
-  width: 100%;
-}
 .text-blok {
   padding-left: 5px;
   margin-bottom: 15px;
   width: 100%;
   height: 30px;
   background-color: #ffffff;
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: -7px 7px 5px rgba(0, 0, 0, 0.15);
+}
+.text-blok:active {
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* ------ information-blok ------- */
+.title-image {
+  width: 130px;
+}
+img {
+  width: 100%;
 }
 h1, h2	{
   font-size: 14px;
@@ -91,33 +100,60 @@ h1 {
   margin: 5px 0 25px;
 }
 h2 {
-padding-left: 5px;
-margin-bottom: 15px;
-width: 100%;
+  padding-left: 5px;
+  margin-bottom: 15px;
+  width: 100%;
 }
-
-.mine-image {
-  height: calc(100vh - 22px);
-}
-.mine-image img {
-  width: auto;
-  height: calc(100vh - 22px);
-}
-
-.page, .chapter {
+.page-block, .chapter-bloсk {
+  position: relative;
   display: flex;
   align-items: center;
   width: 110px;
 }
+.page-block, .chapter-bloсk:hover {
+  cursor: pointer;
+}
+.chapter-menu {
+  position: absolute;
+  left: 90px;
+  padding-top: 10px;
+  z-index: 1;
+  line-height: 140%;
+  background-color: #ffffff;
+  box-shadow: -9px 9px 6px rgba(0, 0, 0, 0.15);
+}
+.chapter-menu>li {
+  padding: 0 10px 0;
+  min-width: 130px;
+  min-height: 25px;
+  border-bottom: 1px solid #cccccc;
+}
+.page-menu {
+  display: none;
+  position: absolute;
+}
+/* ------ information-blok end------- */
+
+.mine-image {
+  height: calc(100vh - 24px);
+}
+.mine-image img {
+  width: auto;
+  height: calc(100vh - 24px);
+}
+
+/* ------ management-blok ------- */
 .management-blok span {
   font-weight: bold;
 }
 .scale-buttons button {
+  margin-left: 5px;
   width: 50px;
   font-size: 18px;
 }
 .step-buttons button {
-  width: 90px;
+  margin-left: 5px;
+  width: 70px;
   font-size: 18px;
 }
 .like-button {
@@ -131,16 +167,4 @@ width: 100%;
 .like-image {
   display: inline-block;
   width: 30px;
-}
-/* #like-calc {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
-} */
-a {
-
 }
