@@ -104,16 +104,17 @@ h2 {
   margin-bottom: 15px;
   width: 100%;
 }
-.page-block, .chapter-bloсk {
+.page-block, .chapter-block {
   position: relative;
   display: flex;
   align-items: center;
   width: 110px;
 }
-.page-block, .chapter-bloсk:hover {
+.page-block, .chapter-block:hover {
   cursor: pointer;
 }
 .chapter-menu {
+  display: none;
   position: absolute;
   left: 90px;
   padding-top: 10px;
@@ -164,6 +165,9 @@ h2 {
   padding: 0;
   width: 90px;
 }
+/* .like-sum {
+  display: contents;
+} */
 .like-image {
   display: inline-block;
   width: 30px;
