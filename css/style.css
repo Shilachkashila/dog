@@ -84,6 +84,21 @@ body	{
 .text-blok:active {
   box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15);
 }
+.drop-menu {
+  position: absolute;
+  left: 90px;
+  padding-top: 10px;
+  z-index: 1;
+  line-height: 140%;
+  background-color: #ffffff;
+  box-shadow: -9px 9px 6px rgba(0, 0, 0, 0.15);
+}
+.drop-menu>li {
+  padding: 0 10px 0;
+  min-width: 130px;
+  min-height: 25px;
+  border-bottom: 1px solid #cccccc;
+}
 
 /* ------ information-blok ------- */
 .title-image {
@@ -115,23 +130,9 @@ h2 {
 }
 .chapter-menu {
   display: none;
-  position: absolute;
-  left: 90px;
-  padding-top: 10px;
-  z-index: 1;
-  line-height: 140%;
-  background-color: #ffffff;
-  box-shadow: -9px 9px 6px rgba(0, 0, 0, 0.15);
-}
-.chapter-menu>li {
-  padding: 0 10px 0;
-  min-width: 130px;
-  min-height: 25px;
-  border-bottom: 1px solid #cccccc;
 }
 .page-menu {
   display: none;
-  position: absolute;
 }
 /* ------ information-blok end------- */
 
