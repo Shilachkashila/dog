@@ -1,5 +1,5 @@
 
-let arr = ['image/main-images/dog1_01.jpg', 'image/main-images/dog1_02.jpg', 'image/main-images/dog1_02.jpg', 'image/main-images/dog1_04.jpg',];
+let arr = ['image/main-images/dog1_01.jpg', 'image/main-images/dog1_02.jpg', 'image/main-images/dog1_03.jpg', 'image/main-images/dog1_04.jpg', 'image/main-images/dog1_29.jpg', 'image/main-images/dog1_30.jpg',];
  
 const img = document.getElementById('picture');
 const btnLeft = document.querySelector('button[name="left"]');

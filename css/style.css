@@ -52,7 +52,7 @@ body	{
 .wrapper {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
   min-height: calc(100vh - 20px);
   border: 2px solid #000000;
@@ -65,13 +65,13 @@ body	{
   right: 20px;
   width: 30px;
 }
-.information-blok, .management-blok {
+.information-blok, .buttons-blok {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 20px 0;
-  width: 240px;
+  width: 100%;
 }
 .text-blok {
   padding-left: 5px;
@@ -86,7 +86,7 @@ body	{
 }
 .drop-menu {
   position: absolute;
-  left: 90px;
+  left: 110px;
   padding-top: 10px;
   z-index: 1;
   line-height: 140%;
@@ -98,6 +98,28 @@ body	{
   min-width: 130px;
   min-height: 25px;
   border-bottom: 1px solid #cccccc;
+}
+/* ------ main ------- */
+main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.main-image {
+  height: calc(100vh - 24px);
+}
+.main-image img {
+  width: auto;
+  height: calc(100vh - 24px);
+}
+/* ------ main end ------- */
+
+/* ------ management-blok ------- */
+.management-blok {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
 }
 
 /* ------ information-blok ------- */
@@ -115,9 +137,7 @@ h1 {
   margin: 5px 0 25px;
 }
 h2 {
-  padding-left: 5px;
   margin-bottom: 15px;
-  width: 100%;
 }
 .page-block, .chapter-block {
   position: relative;
@@ -136,16 +156,11 @@ h2 {
 }
 /* ------ information-blok end------- */
 
-.mine-image {
-  height: calc(100vh - 24px);
+/* ------ buttons-blok ------- */
+.buttons-blok {
+  margin-top: 60px;
 }
-.mine-image img {
-  width: auto;
-  height: calc(100vh - 24px);
-}
-
-/* ------ management-blok ------- */
-.management-blok span {
+.buttons-blok span {
   font-weight: bold;
 }
 .scale-buttons button {
@@ -166,9 +181,6 @@ h2 {
   padding: 0;
   width: 90px;
 }
-/* .like-sum {
-  display: contents;
-} */
 .like-image {
   display: inline-block;
   width: 30px;
