@@ -62,7 +62,7 @@ body	{
 .home-icon {
   position: absolute;
   top: 5px;
-  right: 20px;
+  left: 20px;
   width: 30px;
 }
 .information-blok, .buttons-blok {
@@ -102,7 +102,7 @@ body	{
 /* ------ main ------- */
 main {
   display: flex;
-  flex-grow: 1;
+  width: 79%;
   justify-content: center;
 }
 .main-image {
@@ -112,17 +112,28 @@ main {
   width: auto;
   height: calc(100vh - 24px);
 }
+/* зміна класу при zoom */
+.main-image-zoom {
+  height: 130vh;
+}
+.img-zoom {
+  max-height: 130vh;
+}
 /* ------ main end ------- */
 
 /* ------ management-blok ------- */
 .management-blok {
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 25%;
+  width: 20%;
+  height: calc(100vh - 24px);
 }
 
-/* ------ information-blok ------- */
+/* -- information-blok -- */
 .title-image {
   width: 130px;
 }
@@ -154,7 +165,7 @@ h2 {
 .page-menu {
   display: none;
 }
-/* ------ information-blok end------- */
+/* --- information-blok end---- */
 
 /* ------ buttons-blok ------- */
 .buttons-blok {
