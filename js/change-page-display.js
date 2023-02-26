@@ -1,8 +1,8 @@
 
 
-// import {pagesArrey} from 'controller.js';
+import {pagesArrey} from 'controller.js';
 
-const pagesArrey2 = ['image/main-images/dog1_01.jpg', 'image/main-images/dog1_02.jpg', 'image/main-images/dog1_03.jpg', 'image/main-images/dog1_04.jpg', 'image/main-images/dog1_05.jpg', 'image/main-images/dog1_06.jpg', 'image/main-images/dog1_07.jpg',];
+// const pagesArrey2 = ['image/main-images/dog1_01.jpg', 'image/main-images/dog1_02.jpg', 'image/main-images/dog1_03.jpg', 'image/main-images/dog1_04.jpg', 'image/main-images/dog1_05.jpg', 'image/main-images/dog1_06.jpg', 'image/main-images/dog1_07.jpg',];
 
 
 const img = document.getElementById('picture');
@@ -12,7 +12,7 @@ const pages = document.querySelectorAll('.page-menu>li');
 const arrayOfpages = Array.from(pages);
 
 let i = 0;
-let visiblePage = pagesArrey2[i];
+let visiblePage = pagesArrey[i];
 let indexOfClickedpage = null;
 
 img.setAttribute("src", visiblePage);
@@ -21,16 +21,16 @@ btnLeft.onclick = function() {
     if(i >= 1) {
         i -= 1;
         document.querySelector('.this-page-number').innerHTML = i + 1;
-        visiblePage = pagesArrey2[i];
+        visiblePage = pagesArrey[i];
         return img.setAttribute("src", visiblePage);
     }
 };
 
 btnRight.onclick = function() {
-    if(i < pagesArrey2.length - 1) {
+    if(i < pagesArrey.length - 1) {
         i += 1;
         document.querySelector('.this-page-number').innerHTML = i + 1;
-        visiblePage = pagesArrey2[i];
+        visiblePage = pagesArrey[i];
         return img.setAttribute("src", visiblePage);
     }
 };
@@ -48,6 +48,6 @@ const changePage = (e) => {
 
     document.querySelector('.this-page-number').innerHTML = indexOfClickedpage + 1;
     i = indexOfClickedpage;
-    visiblePage = pagesArrey2[i];
+    visiblePage = pagesArrey[i];
     return img.setAttribute("src", visiblePage);
 };
