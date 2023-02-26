@@ -1,0 +1,42 @@
+/* ---------------------------------------------------1920 */
+@media (min-width: 1920px) {
+  body {
+    margin: auto;
+    width: 1920px;
+    min-height: 1080px;
+    max-height: 1080px;
+}
+  .wrapper {
+    min-height: 1060px;
+  }
+  .main-image {
+    height: 1060px;
+  }
+  .main-image img {
+    height: 1060px;
+  }
+  /* зміна класу при zoom */
+  .main-image-zoom {
+    height: 1404px;
+  }
+  .img-zoom {
+    max-height: 1404px;
+  }
+/* ------ main end ------- */
+
+/* ------ management-blok ------- */
+  .management-blok {
+    height: 1060px;
+  }
+}
+
+/* ---------------------------------------------------1220 */
+@media (max-width: 1220px) {
+
+
+  /*---------------- welcome-------------------- */
+ 
+  /*-- welcome end--- */
+
+
+}
