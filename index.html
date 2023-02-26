@@ -4,11 +4,13 @@
     <title>Riliental-manga</title>
     <meta content="text/html" charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
-     rel="stylesheet"> -->
+     rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script type="module" defer src="js/controller.js"></script> -->
 </head>
 <body>
   <div class="wrapper">
@@ -31,11 +33,7 @@
     </div>
     <div class="page-block text-blok">
       <span class="this-page">Сторінка <span class="this-page-number">1</span></span>
-      <ul class="page-menu drop-menu">
-        <li>Сторінка 1</li>
-        <li>Сторінка 2</li>
-        <li>Сторінка 3</li>
-        <li>Сторінка 4</li>
+      <ul class="page-menu drop-menu"> <!-- li генериться скриптом list-generation -->
       </ul>
     </div>
   </div>
@@ -67,9 +65,10 @@
 
 </div>
 
+<script src="js/list-generation.js"></script>
+<script src="js/change-page-display.js"></script>
 <script src="js/open-close-menu.js"></script>
 <script src="js/caunter-likes.js"></script>
-<script src="js/change-page-display.js"></script>
 <script src="js/zoom.js"></script>
 </body>
 </html>

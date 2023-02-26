@@ -87,17 +87,19 @@ body	{
 .drop-menu {
   position: absolute;
   left: 110px;
-  padding-top: 10px;
   z-index: 1;
   line-height: 140%;
   background-color: #ffffff;
   box-shadow: -9px 9px 6px rgba(0, 0, 0, 0.15);
 }
 .drop-menu>li {
-  padding: 0 10px 0;
+  padding: 5px 10px 0;
   min-width: 130px;
-  min-height: 25px;
+  height: 30px;
   border-bottom: 1px solid #cccccc;
+}
+li:hover {
+  background-color: #cccccc;
 }
 /* ------ main ------- */
 main {
