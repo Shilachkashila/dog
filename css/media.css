@@ -30,9 +30,29 @@
   }
 }
 
-/* ---------------------------------------------------1220 */
-@media (max-width: 1220px) {
+/* ---------------------------------------------------1200 */
+@media (max-width: 1200px) {
 
+/* ------ management-blok ------- */
+.management-blok {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  transform: translateX(-235px);
+ 
+  width: 235px;
+  transition: 0.5s;
+  z-index: 100;
+}
+.list-icon {
+  display: block;
+}
+/* transform: translateX(0); */
+/* ------ main ------- */
+main {
+  width: 100%;
+}
 
   /*---------------- welcome-------------------- */
  

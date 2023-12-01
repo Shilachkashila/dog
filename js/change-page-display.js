@@ -2,7 +2,16 @@
 
 // import {pagesArrey} from 'controller.js';
 
-const pagesArrey2 = ['image/main-images/dog1_01.jpg', 'image/main-images/dog1_02.jpg', 'image/main-images/dog1_03.jpg', 'image/main-images/dog1_04.jpg', 'image/main-images/dog1_05.jpg', 'image/main-images/dog1_06.jpg', 'image/main-images/dog1_07.jpg',];
+const pagesArrey2 = [
+    'image/main-images/dog1_01.jpg',
+    'image/main-images/dog1_02.jpg',
+    'image/main-images/dog1_03.jpg',
+    'image/main-images/dog1_04.jpg',
+    'image/main-images/dog1_05.jpg',
+    'image/main-images/dog1_06.jpg',
+    'image/main-images/dog1_07.jpg',
+    'image/main-images/dog1_37-38.jpg',
+];
 
 
 const img = document.getElementById('picture');
